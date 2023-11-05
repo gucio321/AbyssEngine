@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt update
 
-RUN apt-get install -y git cmake g++ pkg-config python3 python3-distutils bison nasm autoconf autoconf-archive
+RUN apt-get install -y git cmake g++ pkg-config python3 python3-distutils bison nasm autoconf autoconf-archive luarocks
 
 RUN mkdir -p /opt
 RUN git clone https://github.com/microsoft/vcpkg /opt/vcpkg
